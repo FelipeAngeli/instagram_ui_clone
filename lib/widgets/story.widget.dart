@@ -33,7 +33,7 @@ class Story extends StatelessWidget {
             child: const Padding(
               padding: EdgeInsets.all(4.0),
               child: CircleAvatar(
-                backgroundColor: Colors.blue,
+                backgroundImage: AssetImage('assets/images/baby-yoda.jpg'),
               ),
             ),
           ),
@@ -42,10 +42,10 @@ class Story extends StatelessWidget {
           height: 5,
         ),
         Text(
-          index == 0 ? 'Your Story' : 'growdev',
+          index == 0 ? 'Seu story' : 'fulanx',
           style: TextStyle(
             color: index == 0 ? Colors.grey : Colors.white,
-            fontSize: 12,
+            fontSize: 14,
           ),
         ),
       ],

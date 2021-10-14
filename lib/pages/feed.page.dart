@@ -69,9 +69,9 @@ class _FeedPageState extends State<FeedPage> {
       title: const Text(
         'Instagram',
         style: TextStyle(
-          fontFamily: 'Shadows Into Light',
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
+          fontFamily: 'grandista',
+          fontSize: 28,
+          // fontWeight: FontWeight.bold,
         ),
       ),
       actions: [
@@ -183,7 +183,7 @@ class _FeedPageState extends State<FeedPage> {
           ),
           BottomNavigationBarItem(
             icon: CircleAvatar(
-              backgroundColor: Colors.blue,
+              backgroundImage: NetworkImage('assets/images/baby-yoda.jpg'),
               radius: 15,
             ),
             label: '',

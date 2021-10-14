@@ -30,15 +30,15 @@ class Post extends StatelessWidget {
       child: Row(
         children: const [
           CircleAvatar(
-            backgroundColor: Colors.yellow,
-            radius: 15,
+            backgroundImage: AssetImage('assets/images/mandalorian.png'),
+            radius: 20,
           ),
           SizedBox(width: 5),
           Text(
-            'growdev',
+            'Mandalorian',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 16,
+              fontSize: 18,
             ),
           ),
           Spacer(),
@@ -54,7 +54,7 @@ class Post extends StatelessWidget {
   Widget buildContent() {
     return Expanded(
       child: Image.asset(
-        'assets/images/img-1.png',
+        'assets/images/feed.jpg',
         fit: BoxFit.fill,
       ),
     );
@@ -94,24 +94,27 @@ class Post extends StatelessWidget {
             '500 likes',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 16,
+              fontSize: 18,
             ),
           ),
-          const Text.rich(
-            TextSpan(
-              children: [
-                TextSpan(
-                  text: 'growdev',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                TextSpan(text: ' A descrição do post vai aqui')
-              ],
-            ),
-            style: TextStyle(
-              fontSize: 16,
+          const Padding(
+            padding: EdgeInsets.only(top: 12),
+            child: Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: 'baby_yoda',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  TextSpan(text: ' Deixe um comentário')
+                ],
+              ),
+              style: TextStyle(
+                fontSize: 18,
+              ),
             ),
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 10),
           buildAddComent(),
         ],
       ),
@@ -122,7 +125,7 @@ class Post extends StatelessWidget {
     return Row(
       children: const [
         CircleAvatar(
-          backgroundColor: Colors.yellow,
+          backgroundImage: AssetImage('assets/images/baby-yoda.jpg'),
           radius: 10,
         ),
         SizedBox(width: 10),
@@ -133,7 +136,7 @@ class Post extends StatelessWidget {
           ),
         ),
         Spacer(),
-        Text('🤣   💪')
+        Text('')
       ],
     );
   }
