@@ -1,6 +1,7 @@
 import 'package:clone_instagram_ui/widgets/post.widget.dart';
 import 'package:clone_instagram_ui/widgets/story.widget.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class FeedPage extends StatefulWidget {
   const FeedPage({Key? key}) : super(key: key);
@@ -77,8 +78,8 @@ class _FeedPageState extends State<FeedPage> {
       actions: [
         GestureDetector(
           child: const Icon(
-            Icons.add_box_outlined,
-            size: 30,
+            FontAwesomeIcons.plusSquare,
+            size: 26,
           ),
           onTap: () {},
         ),
@@ -86,15 +87,15 @@ class _FeedPageState extends State<FeedPage> {
         GestureDetector(
           child: const Icon(
             Icons.favorite_border_rounded,
-            size: 30,
+            size: 26,
           ),
           onTap: () {},
         ),
         const SizedBox(width: 20),
         GestureDetector(
           child: const Icon(
-            Icons.maps_ugc_rounded,
-            size: 30,
+            FontAwesomeIcons.facebookMessenger,
+            size: 26,
           ),
           onTap: () {},
         ),
@@ -183,7 +184,7 @@ class _FeedPageState extends State<FeedPage> {
           ),
           BottomNavigationBarItem(
             icon: CircleAvatar(
-              backgroundImage: NetworkImage('assets/images/baby-yoda.jpg'),
+              backgroundImage: AssetImage('assets/images/baby-yoda.jpg'),
               radius: 15,
             ),
             label: '',

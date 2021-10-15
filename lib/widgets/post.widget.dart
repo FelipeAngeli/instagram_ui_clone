@@ -1,6 +1,8 @@
+//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Post extends StatelessWidget {
   const Post({Key? key}) : super(key: key);
@@ -69,17 +71,17 @@ class Post extends StatelessWidget {
           Row(
             children: const [
               Icon(
-                Icons.favorite_border,
+                FontAwesomeIcons.heart,
                 size: 30,
               ),
               SizedBox(width: 15),
               Icon(
-                Icons.mode_comment_outlined,
+                FontAwesomeIcons.comment,
                 size: 30,
               ),
               SizedBox(width: 15),
               Icon(
-                Icons.send_outlined,
+                FontAwesomeIcons.paperPlane,
                 size: 30,
               ),
               Spacer(),
